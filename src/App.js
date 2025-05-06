@@ -1,11 +1,23 @@
+import { BrowserRouter,  Routes, Route } from 'react-router-dom';
 import './App.css';
+import DashboardPage from './page/Dashboard';
+import LoginPage from './page/Login';
+import HeaderCompoenent from './component/Header/header';
 
 function App() {
   return (
     <>
-    <h1>This is DM Sans</h1>
-    <p>This is Nunito</p>
+    <BrowserRouter>
+    <HeaderCompoenent></HeaderCompoenent>
+    <Routes>
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/dashboard" element={<DashboardPage />} />
+      </Routes>
+    </BrowserRouter>
+
     </>
+
+
   );
 }
 
