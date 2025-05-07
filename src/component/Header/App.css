@@ -1,0 +1,14 @@
+.logo {
+    height: 28px;
+    width: auto;
+    object-fit: contain;
+  }
+  
+header {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #E8E9EB;
+    padding: 24px 24px;
+  }
+  
+  
