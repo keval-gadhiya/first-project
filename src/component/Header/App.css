@@ -5,28 +5,9 @@
 
 }
 
-.left-logos {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
 header {
   width: 100%;
   background: #fff;
   border-bottom: 1px solid #E8E9EB;
   padding: 24px 24px;
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-
-.gap-40 {
-  display: flex;
-  align-items: center;
-  gap: 40px;
 }
