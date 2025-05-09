@@ -1,11 +1,14 @@
-.logo {
+.logo 
+{
   height: 26px;
   width: auto;
   object-fit: contain;
 
 }
 
-header {
+/* Header */
+header 
+{
   display: flex;
   align-items: center;
   width: 100%; 
@@ -18,7 +21,20 @@ header {
 }
 
 header .row{margin: 0px !important;}
-header button.rounded-circle{
+
+/* Rounded Button */
+header button.rounded-circle
+{
+  min-width: 40px ;
+  width: 40px ;
+  height: 40px;
+  background: #F4F5FF;
+  color: #242424;
+  font-size: 20px;
+  margin-right: 12px;
+}
+header button.rounded-circle:hover
+{
   min-width: 40px ;
   width: 40px ;
   height: 40px;
@@ -26,13 +42,32 @@ header button.rounded-circle{
   color: #737DF5;
   font-size: 20px;
   margin-right: 12px;
+    border: 1px solid #737DF5; 
 }
 
-
-.myAccount{
+/* My Account Tab */
+.myAccount
+{
   text-transform: capitalize !important;
-  color: black !important;
+  color: #737DF5 !important;
 }
+
+header button.myAccount
+{
+  text-transform: capitalize !important;
+  color: #737DF5 !important;
+  border: 1px solid transparent; 
+    border-radius: 12px;
+}
+
+header button.myAccount:hover
+{
+  text-transform: capitalize !important;
+  color: #737DF5 !important;
+  border: 1px solid #737DF5; 
+}
+
+
 .myAccount .userImg .rounded-circle
 {
   display: flex;
@@ -56,4 +91,15 @@ header button.rounded-circle{
   margin-left: 12px;
   font-size: 16px;
   font-weight: 600;
+  color: #242424;
+}
+
+.myAccount .userInfo p:hover
+{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #737DF5;
 }
