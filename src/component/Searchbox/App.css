@@ -1,0 +1,24 @@
+.searchBox
+{
+    height: 40px;
+    background: #F0F1FF;
+    border-radius: 7px;
+    padding: 0 12px; 
+    align-items: center;
+    border: 1px solid transparent;
+    transition: border 0.2s ease;
+}
+
+.searchBox:focus-within 
+{
+    border: 1px solid #737DF5; 
+}
+
+.searchBox input
+{
+    background: transparent; 
+    border: 0px; 
+    outline: none;
+    flex: 1;
+    padding-left: 8px;
+}

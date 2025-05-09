@@ -6,8 +6,53 @@
 }
 
 header {
-  width: 100%;
+  display: flex;
+  align-items: center;
+  width: 100%; 
+  justify-content: space-between;
+  padding: 16px 20px; 
   background: #fff;
+  box-sizing: border-box;
+  min-height: 70px;
   border-bottom: 1px solid #E8E9EB;
-  padding: 24px 24px;
+}
+
+header .row{margin: 0px !important;}
+header button.rounded-circle{
+  min-width: 40px ;
+  width: 40px ;
+  height: 40px;
+  background: #F4F5FF;
+  color: #737DF5;
+  font-size: 20px;
+}
+
+
+.myAccount{
+  text-transform: capitalize !important;
+  color: black !important;
+}
+.myAccount .userImg .rounded-circle
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 40px; 
+  height: 40px;
+}
+
+.myAccount .userImg .rounded-circle img
+{
+  object-fit: cover;
+  width: 100%;
+}
+
+.myAccount .userInfo p 
+{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 12px;
+  font-size: 16px;
+  font-weight: 600;
 }
