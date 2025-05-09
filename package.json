@@ -5,6 +5,7 @@
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
+    "@hugeicons/core-free-icons": "^1.0.14",
     "@hugeicons/react": "^1.0.5",
     "@mui/material": "^7.0.2",
     "@mui/styled-engine-sc": "^7.0.2",

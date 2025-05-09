@@ -2,11 +2,16 @@ import { Link } from "react-router-dom";
 import './App.css';
 import logo from "../../assets/logo/logo.svg"
 import Button from '@mui/material/Button';
-import { MdMenuOpen } from "react-icons/md";
-import { MdOutlineMenu } from "react-icons/md";
 import SearchBox from "../Searchbox";
-import { MdDarkMode } from "react-icons/md";
-import { IoNotifications } from "react-icons/io5";
+
+// Icons
+import {
+  HugeiconsIcon,
+  MenuCollapseIcon,
+  Moon02Icon,
+  Notification03Icon,
+  ArrowDown01Icon,
+} from '../Icon/icon.js'; 
 
 
 
@@ -26,15 +31,25 @@ const HeaderCompoenent = () => {
 
                         {/* Search & Icon */}
                         <div className="col-sm-3 d-flex align-items-center part2">
-                            <Button className="rounded-circle mr-3"><MdMenuOpen /></Button>
+                            <Button className="rounded-circle mr-3">
+                                <HugeiconsIcon icon={MenuCollapseIcon} />
+                                </Button>
                             <SearchBox />
                         </div>
+                        
 
                         {/* End Part */}
                         <div className="col-sm-7 d-flex align-items-center justify-content-end part3">
-                            <Button className="rounded-circle mr-3"><MdDarkMode /></Button>
-                            <Button className="rounded-circle mr-3"><IoNotifications /></Button>
+                               <Button className="rounded-circle mr-3">   
+                            <HugeiconsIcon icon={Moon02Icon} />
+                            </Button>
 
+                            <Button className="rounded-circle mr-3">   
+                            <HugeiconsIcon icon={Notification03Icon} />
+                            </Button>
+                         
+
+                            {/* Account Menu */}
                             <Button className="myAccount d-flex align-items-center">
                                 
                                 <div className="userImg">
@@ -50,7 +65,7 @@ const HeaderCompoenent = () => {
                                     </p>
                                 </div>
                                 <div>
-                                {/* <HugeiconsIcon icon={ArrowDown01Icon} /> */}
+                                    <HugeiconsIcon icon={ArrowDown01Icon} />
                                 </div>
                            
                             </Button>
