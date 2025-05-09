@@ -50,7 +50,7 @@ const HeaderCompoenent = () => {
                                     </p>
                                 </div>
                                 <div>
-                                  
+                                {/* <HugeiconsIcon icon={ArrowDown01Icon} /> */}
                                 </div>
                            
                             </Button>
