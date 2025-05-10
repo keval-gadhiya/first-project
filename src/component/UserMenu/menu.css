@@ -1,0 +1,60 @@
+/* UserMenu.css */
+.custom-user-menu {
+    width: 350px;
+    margin-top: 12px;
+    overflow: visible;
+    position: relative;
+}
+
+.custom-user-menu.open {
+    border: 1.5px solid #EAEAEA;
+    border-radius: 12px;
+}
+
+.custom-user-menu .MuiAvatar-root {
+    width: 32px;
+    height: 32px;
+    margin-left: -4px;
+    margin-right: 8px;
+}
+
+.custom-user-menu::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 14px;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    transform: translateY(30%) rotate(45deg);
+    z-index: 0;
+}
+
+
+.menu-item-custom {
+    display: flex;
+    text-align: center;
+    align-items: center; 
+    justify-content: flex-start;
+    padding: 8px 16px;
+}
+
+.menu-item-custom p {
+  align-items: center;
+    font-weight: 700;
+  padding-left: 16px;
+  font-size: 18px;
+}
+
+.menu-item-custom img{
+  margin-right: 8px;
+  display: inline-block; 
+  vertical-align: middle;
+}
+
+
+
+.menu-item-custom:hover {
+    background-color: transparent !important; 
+}
