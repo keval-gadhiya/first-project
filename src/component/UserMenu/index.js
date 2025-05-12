@@ -8,15 +8,6 @@ import "../UserMenu/menu.css"
 import { Box, Typography } from '@mui/material'; // Import Box and Typography
 
 
-// Icons
-import {
-    HugeiconsIcon,
-    MenuCollapseIcon,
-    Moon02Icon,
-    Notification03Icon,
-    ArrowDown01Icon,
-} from '../Icon/icon.js';
-
 //SVGs
 import {
     AvatarAdd,
@@ -29,6 +20,7 @@ import {
 const UserMenu = ({ anchorEl, open, onClose }) => {
     return (
         <Menu
+        className="menu-class"
             anchorEl={anchorEl}
             id="account-menu"
             open={open}
@@ -44,20 +36,11 @@ const UserMenu = ({ anchorEl, open, onClose }) => {
             transformOrigin={{ horizontal: 'right', vertical: 'top' }}
             anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
         >
-            <Box
-                sx={{
-                    display: 'flex',
-                    flexDirection: 'row',  // Changed to row
-                    alignItems: 'center',    // Vertically center items
-                    padding: '0 16px 16px 16px',
-                    borderBottom: '1px solid #E0E0E0',  // Added border
-                    marginBottom: '16px' //Added margin
-                }}
-            >
-                <Avatar sx={{ marginRight: '8px' }}>JS</Avatar>
-                <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-                    <p className="p-tag">John Smith</p>
-                    <p className="email">Email ID</p>
+           <Box className= "user-info-border">
+                <Avatar>JS</Avatar>
+                <Box className="user-text-container" >
+                    <p className="p-tag" >John Smith</p>
+                    <p className="p-tag">Email ID</p>
                 </Box>
             </Box>
             <MenuItem
@@ -77,7 +60,6 @@ const UserMenu = ({ anchorEl, open, onClose }) => {
                 className="menu-item-custom">
                 <img src={SwitcAccount} /> <p className="p-tag">Switch Account</p>
             </MenuItem>
-
         </Menu>
     );
 };

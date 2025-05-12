@@ -1,60 +1,77 @@
 /* UserMenu.css */
+
+/* Main Menu Container */
 .custom-user-menu {
-    width: 350px;
-    margin-top: 12px;
-    overflow: visible;
-    position: relative;
+  width: 350px;
+  margin-top: 12px;
+  overflow: visible;
+  position: relative;
+  padding: 0px !important;
 }
 
 .custom-user-menu.open {
-    border: 1.5px solid #EAEAEA;
-    border-radius: 12px;
+  border: 1.5px solid #EAEAEA;
+  border-radius: 12px;
 }
 
+/* User Information Border */
+.user-info-border {
+  display: flex;
+  align-items: center; /* Vertically align avatar and text */
+  padding: 12px 16px 20px; /* Top, Right, Bottom, Left padding */
+  border: 1px solid #EAEAEA;
+  border-radius: 12px;
+  margin: 16px; /* Top, Right, Bottom, Left margin */
+}
+
+/* Avatar Styling */
 .custom-user-menu .MuiAvatar-root {
-    width: 32px;
-    height: 32px;
-    margin-left: -4px;
-    margin-right: 8px;
-}
-
-.custom-user-menu::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 14px;
-    width: 10px;
-    height: 10px;
-    background-color: white;
-    transform: translateY(30%) rotate(45deg);
-    z-index: 0;
-}
-
-
-.menu-item-custom {
-    display: flex;
-    text-align: center;
-    align-items: center; 
-    justify-content: flex-start;
-    padding: 8px 16px;
-}
-
-.menu-item-custom p {
-  align-items: center;
-    font-weight: 700;
-  padding-left: 16px;
-  font-size: 18px;
-}
-
-.menu-item-custom img{
+  width: 40px;
+  height: 40px;
   margin-right: 8px;
-  display: inline-block; 
+  background-color: #F0F1FF;
+  color: #737DF5;
+  font-family: Nunito;
+  font-size: 16px;
+}
+
+/* Menu Arrow (the little triangle) */
+.custom-user-menu::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 14px;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  transform: translateY(30%) rotate(45deg);
+  z-index: 0;
+}
+
+/* Individual Menu Items */
+.menu-item-custom {
+  display: flex;
+  align-items: center; /* Vertically align icon and text */
+  justify-content: flex-start;
+  padding: 8px 16px;
+  margin-top: 14px;
+  text-align: left; /* Ensure text inside is left-aligned */
+}
+
+.menu-item-custom img {
+  margin-right: 8px;
+  display: inline-block;
   vertical-align: middle;
 }
 
-
+.menu-item-custom p {
+  font-weight: 700;
+  padding-left: 16px;
+  font-size: 18px;
+  margin: 0 !important; /* Use 0 for all margins */
+}
 
 .menu-item-custom:hover {
-    background-color: transparent !important; 
+  background-color: transparent !important;
 }
