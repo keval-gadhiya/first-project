@@ -1,0 +1,64 @@
+/* notificationMenu.css */
+
+/* Main Menu Container */
+.custom-notification-menu {
+  width: 425px;
+  margin-top: 14px;
+  overflow: visible;
+  position: relative;
+  padding: 10px 16px 10px 16px !important;  /* Top, Right, Bottom, Left padding */
+}
+
+
+.custom-notification-menu.open {
+  border: 1.5px solid #EAEAEA;
+  border-radius: 12px;
+}
+
+/* notification Information Border */
+.notification-info-border {
+  display: flex;
+  align-items: start; /* Vertically align avatar and text */
+  padding: 10px 10px 10px; /* Top, Right, Bottom, Left padding */
+  border: 1px solid transparent;
+  border-radius: 12px;
+  margin-bottom: 2px;
+  margin-top: 8px;
+}
+
+.notification-info-border:hover {
+  display: flex;
+  align-items: start; /* Vertically align avatar and text */
+  padding: 10px 10px 10px; /* Top, Right, Bottom, Left padding */
+  border: 1px solid #737DF5;
+  border-radius: 12px;
+  margin-bottom: 2px;
+  margin-top: 8px;
+}
+
+
+/* Menu Arrow (the little triangle) */
+.custom-notification-menu::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 14px;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  transform: translateY(30%) rotate(45deg);
+  z-index: 0;
+}
+
+
+.p-tag{
+  margin: 0px !important;
+  margin-bottom: 4px !important;
+}
+
+.time{
+    font-size: 12px;
+    margin-top: 2px;
+    align-items: start;
+    color: #737DF5;
+}

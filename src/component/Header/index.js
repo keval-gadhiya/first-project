@@ -5,6 +5,7 @@ import logo from "../../assets/logo/logo.svg"
 import Button from '@mui/material/Button';
 import SearchBox from "../Searchbox";
 import UserMenu from "../UserMenu/index.js";
+import NotificationMenu from "../Notification/index.js";
 
 // Icons
 import {
@@ -21,12 +22,24 @@ const HeaderCompoenent = () => {
     const [anchorEl, setAnchorEl] = useState(null);
     const open = Boolean(anchorEl);
 
+    const [isOpenNotitfication, setisOpenNotitfication] = useState(false);
+     const openNotification = Boolean(isOpenNotitfication);
+
     const handleOpenMyAccout = (event) => {
         setAnchorEl(event.currentTarget);
     };
 
     const handleCloseMyAccout = () => {
         setAnchorEl(null);
+    };
+
+
+    const handleOpenMyNotificaition = () => {
+        setisOpenNotitfication(true)
+    };
+
+    const handleCloseMyNotificaition = () => {
+         setisOpenNotitfication(false)
     };
 
     return (
@@ -59,15 +72,25 @@ const HeaderCompoenent = () => {
                             </Button>
 
                             {/* Notification Icon */}
-                            <Button className="rounded-circle mr-3">
+                            <Button 
+                            className="rounded-circle mr-3"
+                            onClick={handleOpenMyNotificaition}
+                            >
                                 <HugeiconsIcon icon={Notification03Icon} />
                             </Button>
+
+                               <NotificationMenu
+                                openNotification={isOpenNotitfication}
+                                open={openNotification}
+                                onClose={handleCloseMyNotificaition}
+                            />
 
                             {/* Account Menu Button */}
                             <Button
                                 className={`myAccount d-flex align-items-center ${open ? 'menu-open' : ''}`}
                                 onClick={handleOpenMyAccout}
                             >
+                              
                                 <div className="userImg">
                                     <span className="rounded-circle">
                                         <img
@@ -88,6 +111,8 @@ const HeaderCompoenent = () => {
                                 open={open}
                                 onClose={handleCloseMyAccout}
                             />
+
+                            
                         </div>
                     </div>
                 </div>

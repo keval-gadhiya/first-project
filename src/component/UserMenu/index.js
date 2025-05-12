@@ -3,7 +3,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Avatar from '@mui/material/Avatar';
 import "../UserMenu/menu.css"
-import { Box, colors, Typography } from '@mui/material'; // Import Box and Typography
+import { Box } from '@mui/material'; // Import Box and Typography
 
 //SVGs
 
