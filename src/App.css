@@ -22,13 +22,13 @@ p, span, div {
 }
 
 .main .sidebarWrapper{
-  width: 20%;
-  flex: 0 0 20%; 
+  width: 18%;
+  flex: 0 0 18%; 
   transition: all 0.3s ease-in-out;
 }
 
 .main .sidebarWrapper .sidebar{
-  width: 20%; 
+  width: 18%; 
   height: 100vh; 
   position: fixed; 
   top: 70px; 
@@ -38,7 +38,7 @@ p, span, div {
 }
 
 
-.main {
+.content {
   background: #f8f8f8;
   width: 100%;
   padding-top: 90px;
