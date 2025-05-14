@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import './App.css';
+import './header.css';
 import logo from "../../assets/logo/logo.svg"
 import Button from '@mui/material/Button';
 import SearchBox from "../Searchbox";

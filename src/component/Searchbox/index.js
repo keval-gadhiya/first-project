@@ -1,4 +1,4 @@
-import './App.css'
+import './search-box.css'
 import { useState } from 'react';
 // Icons
 import {
