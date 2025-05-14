@@ -7,11 +7,11 @@
   box-sizing: border-box;
 }
 
-body {
+/* body {
   font-family: 'DM Sans', 'Nunito', sans-serif;
   font-optical-sizing: auto;
   background: #f8f8f8;
-}
+} */
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'DM Sans', sans-serif;
@@ -19,4 +19,29 @@ h1, h2, h3, h4, h5, h6 {
 
 p, span, div {
   font-family: 'Nunito', sans-serif;
+}
+
+.main .sidebarWrapper{
+  width: 20%;
+  flex: 0 0 20%; 
+  transition: all 0.3s ease-in-out;
+}
+
+.main .sidebarWrapper .sidebar{
+  width: 20%; 
+  height: 100vh; 
+  position: fixed; 
+  top: 70px; 
+  left: 0px; 
+  background: #fff;
+  border-right: 1px solid #E8E9EB;
+}
+
+
+.main {
+  background: #f8f8f8;
+  width: 100%;
+  padding-top: 90px;
+  padding-left: 20px;
+  min-height: 100vh;
 }

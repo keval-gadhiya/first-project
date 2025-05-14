@@ -11,11 +11,15 @@ header {
   align-items: center;
   width: 100%;
   justify-content: space-between;
-  padding: 16px 20px;
+  padding: 0px 20px;
   background: #fff;
   box-sizing: border-box;
   min-height: 70px;
   border-bottom: 1px solid #E8E9EB;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
 }
 
 header .row {
