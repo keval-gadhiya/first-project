@@ -23,19 +23,20 @@ const NotificationMenu = ({ isOpenNotitfication, openNotification, onClose }) =>
                 className: `custom-notification-menu${openNotification ? ' open' : ''}`,
                 style: {
                     boxShadow: 'none',
-                    padding: '16px 0',
+                    marginTop:"-170px",
+                    position: "absolute"
                 },
             }}
             transformOrigin={{ horizontal: 'right', vertical: 'top' }}
             anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
         >
 
-             <div className="row-sm-3 " style={{ display: 'flex', alignItems: 'center', justifyContent: "space-between" }}>
-                        <p
-                            style={{ fontSize: '18px', fontWeight: '800', }}
-                            className="p-tag">Notifications</p>
-                        <p style={{ fontSize: '15px', fontWeight: '500', color: "#737DF5"}}>View All</p>
-                    </div>
+            <div className="row-sm-3 " style={{ display: 'flex', alignItems: 'center', justifyContent: "space-between" }}>
+                <p
+                    style={{ fontSize: '18px', fontWeight: '800', }}
+                    className="p-tag">Notifications</p>
+                <p style={{ fontSize: '15px', fontWeight: '500', color: "#737DF5" }}>View All</p>
+            </div>
 
             {/* Box 1 */}
             <Box className="notification-info-border">

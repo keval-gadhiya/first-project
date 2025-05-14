@@ -10,19 +10,19 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <HeaderCompoenent />
+        <HeaderCompoenent></HeaderCompoenent>
         <div className='main d-flex'>
           <div className='sidebarWrapper'>
             <SideBar />
           </div>
           <div className='content'>
-             <Routes>
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/dashboard" element={<DashboardPage />} />
-        </Routes>
+            <Routes>
+              <Route path="/login" element={<LoginPage />} />
+              <Route path="/dashboard" element={<DashboardPage />} />
+            </Routes>
           </div>
         </div>
-       
+
       </BrowserRouter>
     </>
 
