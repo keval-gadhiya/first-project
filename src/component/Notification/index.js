@@ -23,12 +23,10 @@ const NotificationMenu = ({ isOpenNotitfication, openNotification, onClose }) =>
                 className: `custom-notification-menu${openNotification ? ' open' : ''}`,
                 style: {
                     boxShadow: 'none',
-                    marginTop:"-170px",
-                    position: "absolute"
                 },
             }}
             transformOrigin={{ horizontal: 'right', vertical: 'top' }}
-            anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
+            anchorOrigin={{ horizontal: 'right', vertical: 'top' }}
         >
 
             <div className="row-sm-3 " style={{ display: 'flex', alignItems: 'center', justifyContent: "space-between" }}>

@@ -4,6 +4,7 @@
 .custom-notification-menu {
   width: 425px;
   overflow: visible;
+  margin-top: 60px;
   padding: 10px 16px 10px 16px !important;  /* Top, Right, Bottom, Left padding */
 
 }
