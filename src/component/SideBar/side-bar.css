@@ -1,5 +1,27 @@
-.sidebar ul{margin-bottom: 0px; padding: 0px;}
+.logo {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
 
-.sidebar ul li{list-style: none;}
+/* Actual sidebar content */
+.sidebar {
+    padding: 20px;
+}
 
-.sidebar ul li button{color: black; text-align: left; justify-content: left;}
+
+.sidebar ul {
+    margin-bottom: 0px;
+    padding-top: 32px;
+}
+
+.sidebar ul li {
+    list-style: none;
+}
+
+.sidebar ul li button {
+
+    color: white;
+    text-align: left;
+    justify-content: left;
+}

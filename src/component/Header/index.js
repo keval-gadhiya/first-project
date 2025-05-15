@@ -49,11 +49,11 @@ const HeaderCompoenent = () => {
                     <div className="d-flex align-items-center">
 
                         {/* Logo */}
-                        <div className="col-sm-2 part1">
+                        {/* <div className="col-sm-2 part1">
                             <Link to={'/home'}>
                                 <img src={logo} className="logo"></img>
                             </Link>
-                        </div>
+                        </div> */}
 
                         {/* Search & Icon */}
                         <div className="col-sm-3 d-flex align-items-center part2">
