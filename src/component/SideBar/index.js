@@ -92,6 +92,89 @@ const SideBar = () => {
                                 <HugeiconsIcon icon={ArrowDown01Icon} />
                             </div>
                         </Button>
+
+                             {/* Info */}
+                        <Button className='menu-button'>
+                            <div className='button-inner'>
+                                <div className='row-sm-3'>
+                                    <HugeiconsIcon icon={HelpSquareIcon} />
+                                    <p className='menu-p-tag'>Info</p>
+                                </div>
+                                <HugeiconsIcon icon={ArrowDown01Icon} />
+                            </div>
+                        </Button>     {/* Info */}
+                        <Button className='menu-button'>
+                            <div className='button-inner'>
+                                <div className='row-sm-3'>
+                                    <HugeiconsIcon icon={HelpSquareIcon} />
+                                    <p className='menu-p-tag'>Info</p>
+                                </div>
+                                <HugeiconsIcon icon={ArrowDown01Icon} />
+                            </div>
+                        </Button>     {/* Info */}
+                        <Button className='menu-button'>
+                            <div className='button-inner'>
+                                <div className='row-sm-3'>
+                                    <HugeiconsIcon icon={HelpSquareIcon} />
+                                    <p className='menu-p-tag'>Info</p>
+                                </div>
+                                <HugeiconsIcon icon={ArrowDown01Icon} />
+                            </div>
+                        </Button>     {/* Info */}
+                        <Button className='menu-button'>
+                            <div className='button-inner'>
+                                <div className='row-sm-3'>
+                                    <HugeiconsIcon icon={HelpSquareIcon} />
+                                    <p className='menu-p-tag'>Info</p>
+                                </div>
+                                <HugeiconsIcon icon={ArrowDown01Icon} />
+                            </div>
+                        </Button>     {/* Info */}
+                        <Button className='menu-button'>
+                            <div className='button-inner'>
+                                <div className='row-sm-3'>
+                                    <HugeiconsIcon icon={HelpSquareIcon} />
+                                    <p className='menu-p-tag'>Info</p>
+                                </div>
+                                <HugeiconsIcon icon={ArrowDown01Icon} />
+                            </div>
+                        </Button>     {/* Info */}
+                        <Button className='menu-button'>
+                            <div className='button-inner'>
+                                <div className='row-sm-3'>
+                                    <HugeiconsIcon icon={HelpSquareIcon} />
+                                    <p className='menu-p-tag'>Info</p>
+                                </div>
+                                <HugeiconsIcon icon={ArrowDown01Icon} />
+                            </div>
+                        </Button>     {/* Info */}
+                        <Button className='menu-button'>
+                            <div className='button-inner'>
+                                <div className='row-sm-3'>
+                                    <HugeiconsIcon icon={HelpSquareIcon} />
+                                    <p className='menu-p-tag'>Info</p>
+                                </div>
+                                <HugeiconsIcon icon={ArrowDown01Icon} />
+                            </div>
+                        </Button>     {/* Info */}
+                        <Button className='menu-button'>
+                            <div className='button-inner'>
+                                <div className='row-sm-3'>
+                                    <HugeiconsIcon icon={HelpSquareIcon} />
+                                    <p className='menu-p-tag'>Info</p>
+                                </div>
+                                <HugeiconsIcon icon={ArrowDown01Icon} />
+                            </div>
+                        </Button>     {/* Info */}
+                        <Button className='menu-button'>
+                            <div className='button-inner'>
+                                <div className='row-sm-3'>
+                                    <HugeiconsIcon icon={HelpSquareIcon} />
+                                    <p className='menu-p-tag'>Info</p>
+                                </div>
+                                <HugeiconsIcon icon={ArrowDown01Icon} />
+                            </div>
+                        </Button>
                     </li>
                 </ul>
             </div>

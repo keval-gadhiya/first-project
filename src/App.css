@@ -51,3 +51,8 @@ p, span, div {
   padding: 20px;
   padding-top: 90px; /* leave space for fixed header */
 }
+
+
+::-webkit-scrollbar {
+  width: 5px; /* Adjust width as needed */
+}
