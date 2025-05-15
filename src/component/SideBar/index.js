@@ -29,152 +29,103 @@ const SideBar = () => {
                     <li>
                         {/* Menu Button */}
                         {/* Dashboard */}
-                        <Button className='active-menu-button'>
-                            <div className='button-inner'>
-                                <div className='row-sm-3'>
-                                    <HugeiconsIcon icon={DashboardBrowsingIcon} />
-                                    <p className='menu-p-tag'>Dashboard</p>
+                        <Link to="/">
+                            <Button className='active-menu-button'>
+                                <div className='button-inner'>
+                                    <div className='row-sm-3'>
+                                        <HugeiconsIcon icon={DashboardBrowsingIcon} />
+                                        <p className='menu-p-tag'>Dashboard</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </Button>
+                            </Button>
+                        </Link>
+                        
+                        {/* Product */}
+                            <Button className='menu-button'>
+                                <div className='button-inner'>
+                                    <div className='row-sm-3'>
+                                        <HugeiconsIcon icon={DeliveryBox01Icon} />
+                                        <p className='menu-p-tag'>Product</p>
+                                    </div>
+                                    <HugeiconsIcon icon={ArrowDown01Icon} />
+                                </div>
+                            </Button>
+                            <div className='sub-menu'>
+                                <ul>
+                                    <li>
+                                        <Link className='sub-menu-link'>
+                                        <p className=''>Product List</p>
+                                        </Link>
+                                    </li>
 
-                         {/* Product */}
-                        <Button className='menu-button'>
-                            <div className='button-inner'>
-                                <div className='row-sm-3'>
-                                    <HugeiconsIcon icon={DeliveryBox01Icon} />
-                                    <p className='menu-p-tag'>Product</p>
-                                </div>
-                                <HugeiconsIcon icon={ArrowDown01Icon} />
-                            </div>
-                        </Button>
+                                       <li>
+                                    <Link className='sub-menu-link'>
+                                        <p className=''>Product View</p>
+                                        </Link>
+                                    </li>
 
-                         {/* Message */}
-                        <Button className='menu-button'>
-                            <div className='button-inner'>
-                                <div className='row-sm-3'>
-                                    <HugeiconsIcon icon={Message01Icon} />
-                                    <p className='menu-p-tag'>Message</p>
-                                </div>
-                                <HugeiconsIcon icon={ArrowDown01Icon} />
+                                       <li>
+                                      <Link className='sub-menu-link'>
+                                        <p className=''>Product Upload</p>
+                                        </Link>
+                                    </li>
+                                </ul>
                             </div>
-                        </Button>
 
-                         {/* User */}
-                        <Button className='menu-button'>
-                            <div className='button-inner'>
-                                <div className='row-sm-3'>
-                                    <HugeiconsIcon icon={UserCircle02Icon} />
-                                    <p className='menu-p-tag'>User</p>
+                        {/* Message */}
+                        <Link to="/">
+                            <Button className='menu-button'>
+                                <div className='button-inner'>
+                                    <div className='row-sm-3'>
+                                        <HugeiconsIcon icon={Message01Icon} />
+                                        <p className='menu-p-tag'>Message</p>
+                                    </div>
+                                    <HugeiconsIcon icon={ArrowDown01Icon} />
                                 </div>
-                                <HugeiconsIcon icon={ArrowDown01Icon} />
-                            </div>
-                        </Button>
+                            </Button>
 
-                          {/* Setting */}
-                        <Button className='menu-button'>
-                            <div className='button-inner'>
-                                <div className='row-sm-3'>
-                                    <HugeiconsIcon icon={Setting07Icon} />
-                                    <p className='menu-p-tag'>Setting</p>
-                                </div>
-                                <HugeiconsIcon icon={ArrowDown01Icon} />
-                            </div>
-                        </Button>
+                        </Link>
 
-                          {/* Info */}
-                        <Button className='menu-button'>
-                            <div className='button-inner'>
-                                <div className='row-sm-3'>
-                                    <HugeiconsIcon icon={HelpSquareIcon} />
-                                    <p className='menu-p-tag'>Info</p>
+                        {/* User */}
+                        <Link to="/">
+                            <Button className='menu-button'>
+                                <div className='button-inner'>
+                                    <div className='row-sm-3'>
+                                        <HugeiconsIcon icon={UserCircle02Icon} />
+                                        <p className='menu-p-tag'>User</p>
+                                    </div>
+                                    <HugeiconsIcon icon={ArrowDown01Icon} />
                                 </div>
-                                <HugeiconsIcon icon={ArrowDown01Icon} />
-                            </div>
-                        </Button>
+                            </Button>
+                        </Link>
 
-                             {/* Info */}
-                        <Button className='menu-button'>
-                            <div className='button-inner'>
-                                <div className='row-sm-3'>
-                                    <HugeiconsIcon icon={HelpSquareIcon} />
-                                    <p className='menu-p-tag'>Info</p>
+                        {/* Setting */}
+                        <Link to="/">
+                            <Button className='menu-button'>
+                                <div className='button-inner'>
+                                    <div className='row-sm-3'>
+                                        <HugeiconsIcon icon={Setting07Icon} />
+                                        <p className='menu-p-tag'>Setting</p>
+                                    </div>
+                                    <HugeiconsIcon icon={ArrowDown01Icon} />
                                 </div>
-                                <HugeiconsIcon icon={ArrowDown01Icon} />
-                            </div>
-                        </Button>     {/* Info */}
-                        <Button className='menu-button'>
-                            <div className='button-inner'>
-                                <div className='row-sm-3'>
-                                    <HugeiconsIcon icon={HelpSquareIcon} />
-                                    <p className='menu-p-tag'>Info</p>
+                            </Button>
+                        </Link>
+
+                        {/* Info */}
+                        <Link to="/">
+                            <Button className='menu-button'>
+                                <div className='button-inner'>
+                                    <div className='row-sm-3'>
+                                        <HugeiconsIcon icon={HelpSquareIcon} />
+                                        <p className='menu-p-tag'>Info</p>
+                                    </div>
+                                    <HugeiconsIcon icon={ArrowDown01Icon} />
                                 </div>
-                                <HugeiconsIcon icon={ArrowDown01Icon} />
-                            </div>
-                        </Button>     {/* Info */}
-                        <Button className='menu-button'>
-                            <div className='button-inner'>
-                                <div className='row-sm-3'>
-                                    <HugeiconsIcon icon={HelpSquareIcon} />
-                                    <p className='menu-p-tag'>Info</p>
-                                </div>
-                                <HugeiconsIcon icon={ArrowDown01Icon} />
-                            </div>
-                        </Button>     {/* Info */}
-                        <Button className='menu-button'>
-                            <div className='button-inner'>
-                                <div className='row-sm-3'>
-                                    <HugeiconsIcon icon={HelpSquareIcon} />
-                                    <p className='menu-p-tag'>Info</p>
-                                </div>
-                                <HugeiconsIcon icon={ArrowDown01Icon} />
-                            </div>
-                        </Button>     {/* Info */}
-                        <Button className='menu-button'>
-                            <div className='button-inner'>
-                                <div className='row-sm-3'>
-                                    <HugeiconsIcon icon={HelpSquareIcon} />
-                                    <p className='menu-p-tag'>Info</p>
-                                </div>
-                                <HugeiconsIcon icon={ArrowDown01Icon} />
-                            </div>
-                        </Button>     {/* Info */}
-                        <Button className='menu-button'>
-                            <div className='button-inner'>
-                                <div className='row-sm-3'>
-                                    <HugeiconsIcon icon={HelpSquareIcon} />
-                                    <p className='menu-p-tag'>Info</p>
-                                </div>
-                                <HugeiconsIcon icon={ArrowDown01Icon} />
-                            </div>
-                        </Button>     {/* Info */}
-                        <Button className='menu-button'>
-                            <div className='button-inner'>
-                                <div className='row-sm-3'>
-                                    <HugeiconsIcon icon={HelpSquareIcon} />
-                                    <p className='menu-p-tag'>Info</p>
-                                </div>
-                                <HugeiconsIcon icon={ArrowDown01Icon} />
-                            </div>
-                        </Button>     {/* Info */}
-                        <Button className='menu-button'>
-                            <div className='button-inner'>
-                                <div className='row-sm-3'>
-                                    <HugeiconsIcon icon={HelpSquareIcon} />
-                                    <p className='menu-p-tag'>Info</p>
-                                </div>
-                                <HugeiconsIcon icon={ArrowDown01Icon} />
-                            </div>
-                        </Button>     {/* Info */}
-                        <Button className='menu-button'>
-                            <div className='button-inner'>
-                                <div className='row-sm-3'>
-                                    <HugeiconsIcon icon={HelpSquareIcon} />
-                                    <p className='menu-p-tag'>Info</p>
-                                </div>
-                                <HugeiconsIcon icon={ArrowDown01Icon} />
-                            </div>
-                        </Button>
+                            </Button>
+                        </Link>
+
+
                     </li>
                 </ul>
             </div>
