@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import './header.css';
-import logo from "../../assets/logo/logo.svg"
 import Button from '@mui/material/Button';
 import SearchBox from "../Searchbox";
 import UserMenu from "../UserMenu/index.js";
@@ -47,13 +45,6 @@ const HeaderCompoenent = () => {
             <header>
                 <div className="container-fluid w-100">
                     <div className="d-flex align-items-center">
-
-                        {/* Logo */}
-                        {/* <div className="col-sm-2 part1">
-                            <Link to={'/home'}>
-                                <img src={logo} className="logo"></img>
-                            </Link>
-                        </div> */}
 
                         {/* Search & Icon */}
                         <div className="col-sm-3 d-flex align-items-center part2">
