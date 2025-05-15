@@ -6,7 +6,9 @@ import {
   MenuCollapseIcon,
   Menu01Icon,
   Notification03Icon,
-  Search01Icon
+  Search01Icon,
+  DashboardBrowsingIcon,
+  UserCircle02Icon,
 } from "@hugeicons/core-free-icons";
 
 export {
@@ -16,5 +18,7 @@ export {
   MenuCollapseIcon,
   Menu01Icon,
   Notification03Icon,
-  Search01Icon
+  Search01Icon,
+  DashboardBrowsingIcon,
+  UserCircle02Icon,
 };

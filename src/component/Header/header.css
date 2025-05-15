@@ -4,7 +4,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  left: 18%; /* same as sidebar width */
+  left: 20%; /* same as sidebar width */
   width: 98%;
   background: #fff;
   z-index: 1100;
