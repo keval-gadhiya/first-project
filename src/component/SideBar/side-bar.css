@@ -24,20 +24,34 @@
     color: white;
     text-align: left;
     justify-content: left;
-    background: #737DF5;
+    background: transparent;
+}
+
+.sidebar ul li button:hover {
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    text-align: left;
+    justify-content: left;
+    background: #393778;
 }
 
 
-
 /* MenuButton.css */
-.menu-button {
+.active-menu-button {
     width: 100%;
     margin-bottom: 12px !important;
+    background: #737DF5 !important;
+}
+
+.menu-button {
+    width: 100%;
+    margin-bottom: 8px !important;
 }
 
 .button-inner {
     width: 100%;
-    padding: 6px 12px;
+    padding: 6px 8px;
     display: flex;
     align-items: center;
     justify-content: space-between;
