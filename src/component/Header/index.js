@@ -18,97 +18,91 @@ import {
 const HeaderCompoenent = () => {
 
     const [anchorEl, setAnchorEl] = useState(null);
-    const open = Boolean(anchorEl);
+    const isUserMenuOpen = Boolean(anchorEl);
 
-    const [isOpenNotitfication, setisOpenNotitfication] = useState(false);
-     const openNotification = Boolean(isOpenNotitfication);
+    const [isOpenNotification, setisOpenNotitfication] = useState(false);
+     const isNotificationMenuOpen = Boolean(isOpenNotification);
 
-    const handleOpenMyAccout = (event) => {
+    const handleOpenMyAccount = (event) => {
         setAnchorEl(event.currentTarget);
     };
 
-    const handleCloseMyAccout = () => {
+    const handleCloseMyAccount = () => {
         setAnchorEl(null);
     };
 
 
-    const handleOpenMyNotificaition = () => {
+    const handleOpenMyNotification = () => {
         setisOpenNotitfication(true)
     };
 
-    const handleCloseMyNotificaition = () => {
+    const handleCloseMyNotification = () => {
          setisOpenNotitfication(false)
     };
 
     return (
         <>
-            <header>
-                <div className="container-fluid w-100">
-                    <div className="d-flex align-items-center">
+          <header>
+            <div className="container-fluid w-100">
+                <div className="d-flex align-items-center" style={{ justifyContent: "space-between" }}>
+                    {/* Left: Menu + Search */}
+                    <div className="col-sm-3 d-flex align-items-center part2">
+                        <Button className="rounded-circle mr-3">
+                            <HugeiconsIcon icon={MenuCollapseIcon} />
+                        </Button>
+                        <SearchBox />
+                    </div>
 
-                        {/* Search & Icon */}
-                        <div className="col-sm-3 d-flex align-items-center part2">
-                            <Button className="rounded-circle mr-3">
-                                <HugeiconsIcon icon={MenuCollapseIcon} />
-                            </Button>
-                            <SearchBox />
-                        </div>
+                    {/* Right: Icons + Account */}
+                    <div className="col-sm-7 d-flex align-items-center justify-content-end part3">
+                        {/* Dark Mode Icon */}
+                        <Button className="rounded-circle mr-3">
+                            <HugeiconsIcon icon={Moon02Icon} />
+                        </Button>
 
-                        {/* End Part */}
-                        <div className="col-sm-7 d-flex align-items-center justify-content-end part3">
-
-                            {/* Dark Mode  Icon*/}
-                            <Button className="rounded-circle mr-3">
-                                <HugeiconsIcon icon={Moon02Icon} />
-                            </Button>
-
-                            {/* Notification Icon */}
-                            <Button 
+                        {/* Notification */}
+                        <Button
                             className="rounded-circle mr-3"
-                            onClick={handleOpenMyNotificaition}
-                            >
-                                <HugeiconsIcon icon={Notification03Icon} />
-                            </Button>
+                            onClick={handleOpenMyNotification}
+                        >
+                            <HugeiconsIcon icon={Notification03Icon} />
+                        </Button>
+                        <NotificationMenu
+                            openNotification={isOpenNotification}
+                            open={isNotificationMenuOpen}
+                            onClose={handleCloseMyNotification}
+                        />
 
-                               <NotificationMenu
-                                openNotification={isOpenNotitfication}
-                                open={openNotification}
-                                onClose={handleCloseMyNotificaition}
-                            />
+                        {/* User Account */}
+                        <Button
+                            className={`myAccount d-flex align-items-center ${isUserMenuOpen ? 'menu-open' : ''}`}
+                            onClick={handleOpenMyAccount}
+                        >
+                            <div className="userImg">
+                                <span className="rounded-circle">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1492288991661-058aa541ff43?q=80&w=3087&auto=format&fit=crop"
+                                        alt="User Avatar"
+                                    />
+                                </span>
+                            </div>
+                            <div className="userInfo">
+                                <p>John Smith</p>
+                            </div>
+                            <div className="myAccIcon">
+                                <HugeiconsIcon icon={ArrowDown01Icon} />
+                            </div>
+                        </Button>
 
-                            {/* Account Menu Button */}
-                            <Button
-                                className={`myAccount d-flex align-items-center ${open ? 'menu-open' : ''}`}
-                                onClick={handleOpenMyAccout}
-                            >
-                              
-                                <div className="userImg">
-                                    <span className="rounded-circle">
-                                        <img
-                                            src="https://images.unsplash.com/photo-1492288991661-058aa541ff43?q=80&w=3087&auto=format&fit=crop" />
-                                    </span>
-                                </div>
-                                <div className="userInfo">
-                                    <p>John Smith</p>
-                                </div>
-                                <div className="myAccIcon">
-                                    <HugeiconsIcon icon={ArrowDown01Icon} />
-                                </div>
-                            </Button>
-
-                            {/* UserMenu gets anchor and handlers as props */}
-                            <UserMenu
-                                anchorEl={anchorEl}
-                                open={open}
-                                onClose={handleCloseMyAccout}
-                            />
-
-                            
-                        </div>
+                        <UserMenu
+                            anchorEl={anchorEl}
+                            open={isUserMenuOpen}
+                            onClose={handleCloseMyAccount}
+                        />
                     </div>
                 </div>
-            </header>
-        </>
+            </div>
+        </header></>
     );
 };
 
