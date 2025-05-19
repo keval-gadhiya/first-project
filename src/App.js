@@ -5,6 +5,7 @@ import DashboardPage from './page/Dashboard';
 import LoginPage from './page/Login';
 import HeaderCompoenent from './component/Header';
 import SideBar from './component/SideBar';
+import ProductPage from './page/Product';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
               <Routes>
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/dashboard" element={<DashboardPage />} />
+                <Route path="/product" element={<ProductPage />} />
               </Routes>
             </div>
           </div>
