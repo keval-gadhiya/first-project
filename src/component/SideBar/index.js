@@ -33,11 +33,11 @@ const SideBar = () => {
     const getButtonClass = (path, exact = true) => {
         if (exact) {
             return location.pathname === path
-                ? 'menu-button active-menu-button'
+                ? 'active-menu-button'
                 : 'menu-button';
         } else {
             return location.pathname.startsWith(path)
-                ? 'menu-button active-menu-button'
+                ? 'active-menu-button'
                 : 'menu-button';
         }
     };
@@ -79,6 +79,7 @@ const SideBar = () => {
                                 style={{
                                     transform: productOpen ? 'rotate(180deg)' : 'rotate(0deg)',
                                     transition: 'transform 0.2s ease',
+                                    color: 'white',
                                 }}
                             />
                         </div>
@@ -87,26 +88,26 @@ const SideBar = () => {
                     {productOpen && (
                         <div className="sub-menu">
                             <ul>
-                                <li>
+                                <li style={{ marginTop: '12px' }}>
                                     <Link
                                         to="/product-list"
                                         className={`sub-menu-link ${currentPath === '/product-list' ? 'active-sub-menu-link' : ''}`}
                                     >
-                                        <p style={{ marginBottom: '16px' }}>Product List</p>
+                                        <p >Product List</p>
                                     </Link>
                                 </li>
                                 <li>
                                     <Link to="/product-view"
                                          className={`sub-menu-link ${currentPath === '/product-view' ? 'active-sub-menu-link' : ''}`}
                                          >
-                                        <p style={{ marginBottom: '16px' }}>Product View</p>
+                                        <p>Product View</p>
                                     </Link>
                                 </li>
                                 <li>
                                     <Link to="/product-upload" 
                                          className={`sub-menu-link ${currentPath === '/product-upload' ? 'active-sub-menu-link' : ''}`}
                                          >
-                                        <p style={{ marginBottom: '16px' }}>Product Upload</p>
+                                        <p>Product Upload</p>
                                     </Link>
                                 </li>
                             </ul>

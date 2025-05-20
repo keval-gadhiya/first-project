@@ -11,39 +11,52 @@
 }
 
 /* ========== Sidebar Menu ========== */
-.sidebar ul {
-  margin: 0;
-  padding: 0;
-  max-height: 800px;
+.sidebar ul,
+.sub-menu ul {
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
   overflow-y: auto;
   overflow-x: hidden;
 }
 
-.sidebar ul li {
+.sidebar ul li,
+.sub-menu ul li {
   list-style: none;
+}
+
+.sidebar ul li {
+  padding-top: 12px;
 }
 
 /* ========== Menu Buttons ========== */
 .menu-button,
 .active-menu-button {
   width: 100%;
-  margin-bottom: 12px;
-  border-radius: 10px;
+  border-radius: 10px !important;
   text-align: left;
-  color: white;
+  overflow: hidden !important;
 }
 
 .menu-button {
-  background: transparent;
+  background: transparent !important;
+  color: white;
 }
 
 .menu-button:hover {
-  background: #393778;
+  background: #393778 !important;
 }
 
 .active-menu-button {
   background: #737DF5 !important;
   color: white !important;
+}
+
+/* Override Material-UI button styles */
+.menu-button.MuiButton-root,
+.active-menu-button.MuiButton-root {
+  border-radius: 10px !important;
+  overflow: hidden !important;
 }
 
 /* ========== Button Content ========== */
@@ -56,6 +69,7 @@
 }
 
 .row-sm-3 {
+  color: #fff !important;
   display: flex;
   align-items: center;
   width: 100%;
@@ -66,18 +80,10 @@
   font-size: 16px;
   font-weight: 500;
   text-transform: capitalize;
+  color: #fff !important;
 }
 
 /* ========== Sub-menu ========== */
-.sub-menu ul {
-  margin: 0;
-  padding: 0;
-}
-
-.sub-menu ul li {
-  list-style: none;
-}
-
 .sub-menu-link {
   text-decoration: none;
   color: white;
@@ -97,4 +103,10 @@
 .active-sub-menu-link p {
   color: #fff;
   opacity: 1;
+}
+
+.menu-button .MuiButton-label,
+.active-menu-button .MuiButton-label {
+  display: flex;
+  align-items: center;
 }
